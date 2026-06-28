@@ -38,13 +38,13 @@
 
 #### Custom Chain in iptable
 1. Filtering in INPUT chain
->iptables -N customchain
->iptables -A INPUT -p tcp --dport 22 -j customchain
+>iptables -N customchain\
+>iptables -A INPUT -p tcp --dport 22 -j customchain\
 >iptables -A customchain -j ACCEPT
 
 2. Filtering in customchain
->iptables -N customchain
->iptables -A customchain -p tcp --dport 22 -j ACCEPT
+>iptables -N customchain\
+>iptables -A customchain -p tcp --dport 22 -j ACCEPT\
 >iptables -A INPUT -j customchain
 
 ## Flags
