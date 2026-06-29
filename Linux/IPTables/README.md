@@ -35,7 +35,6 @@
 ###### iptables -A INPUT -p tcp --dport 22 -m limit --limit 3/min -j ACCEPT
 >Append rule to INPUT, rate limiting SSH to 3 per minute
 
-
 #### Custom Chain in iptable
 1. Filtering in INPUT chain
 >iptables -N customchain\
